@@ -6,7 +6,6 @@
 
   <groupId>org.debugroom</groupId>
   <artifactId>mynavi-sample-aws-microservice</artifactId>
-  <version>1.0-SNAPSHOT</version>
-
+  <version>0.0.1-SNAPSHOT</version>
 
 </project>
