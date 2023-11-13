@@ -3,8 +3,8 @@ package org.debugroom.mynavi.sample.aws.microservice.frontend.webapp.app.web.sec
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.util.Objects;
 
 public class SessionExpiredDetectingLoginUrlAuthenticationEntryPoint
@@ -21,7 +21,7 @@ public class SessionExpiredDetectingLoginUrlAuthenticationEntryPoint
         String redirectUrl = super.buildRedirectUrlToLoginPage(
                 request, response, authException);
         if(isRequestedSessionInvalid(request)){
-            redirectUrl = "timeout";
+            redirectUrl = "/timeout";
         }
         return redirectUrl;
     }
