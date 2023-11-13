@@ -1,6 +1,6 @@
 package org.debugroom.mynavi.sample.aws.microservice.frontend.webapp.app.web;
 
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
